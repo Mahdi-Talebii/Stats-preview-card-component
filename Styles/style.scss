@@ -1,0 +1,71 @@
+// General Styles
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.centralize-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.self-centralize {
+    align-self: center;
+    justify-self: center;
+}
+
+.desktop-content {
+    display: all;
+}
+
+.mobile-content {
+    display: none;
+}
+
+.white-texts {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.5rem;
+}
+
+.main-paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.3rem;
+}
+
+.stat-headings {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+@media all and (max-width:376px) {
+    
+    .desktop-content {
+        display: none;
+    }
+    .mobile-content {
+        display: all;
+    }
+}
+
+
+@import 'body';
